@@ -1,0 +1,13 @@
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\bin\Debug\netcoreapp3.1\Lab2rcorrea4.exe
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\bin\Debug\netcoreapp3.1\Lab2rcorrea4.deps.json
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\bin\Debug\netcoreapp3.1\Lab2rcorrea4.runtimeconfig.json
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\bin\Debug\netcoreapp3.1\Lab2rcorrea4.runtimeconfig.dev.json
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\bin\Debug\netcoreapp3.1\Lab2rcorrea4.dll
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\bin\Debug\netcoreapp3.1\Lab2rcorrea4.pdb
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\obj\Debug\netcoreapp3.1\Lab2rcorrea4.csprojAssemblyReference.cache
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\obj\Debug\netcoreapp3.1\Lab2rcorrea4.csproj.CoreCompileInputs.cache
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\obj\Debug\netcoreapp3.1\Lab2rcorrea4.AssemblyInfoInputs.cache
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\obj\Debug\netcoreapp3.1\Lab2rcorrea4.AssemblyInfo.cs
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\obj\Debug\netcoreapp3.1\Lab2rcorrea4.dll
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\obj\Debug\netcoreapp3.1\Lab2rcorrea4.pdb
+C:\Users\corre\source\repos\Lab2rcorrea4\Lab2rcorrea4\obj\Debug\netcoreapp3.1\Lab2rcorrea4.genruntimeconfig.cache
