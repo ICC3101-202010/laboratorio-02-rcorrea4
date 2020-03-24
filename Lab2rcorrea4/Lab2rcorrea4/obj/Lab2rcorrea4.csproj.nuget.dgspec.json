@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\corre\\source\\repos\\Lab2rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4.csproj": {}
+    "C:\\Users\\corre\\OneDrive\\Escritorio\\laboratorio-02-rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\corre\\source\\repos\\Lab2rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4.csproj": {
+    "C:\\Users\\corre\\OneDrive\\Escritorio\\laboratorio-02-rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\corre\\source\\repos\\Lab2rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4.csproj",
+        "projectUniqueName": "C:\\Users\\corre\\OneDrive\\Escritorio\\laboratorio-02-rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4.csproj",
         "projectName": "Lab2rcorrea4",
-        "projectPath": "C:\\Users\\corre\\source\\repos\\Lab2rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4.csproj",
+        "projectPath": "C:\\Users\\corre\\OneDrive\\Escritorio\\laboratorio-02-rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4.csproj",
         "packagesPath": "C:\\Users\\corre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\corre\\source\\repos\\Lab2rcorrea4\\Lab2rcorrea4\\obj\\",
+        "outputPath": "C:\\Users\\corre\\OneDrive\\Escritorio\\laboratorio-02-rcorrea4\\Lab2rcorrea4\\Lab2rcorrea4\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\corre\\AppData\\Roaming\\NuGet\\NuGet.Config",
