@@ -6,21 +6,27 @@ namespace Lab2rcorrea4
 {
     class Espotifai
     {
-        public Cancion[] canciones;
+        public List<Cancion> canciones;
 
+        
         public Espotifai()
         {
-
+            canciones = new List<Cancion>();
         }
         public bool AgregarCancion(Cancion cancion)
         {
-            int i = canciones.Length;
+            
             bool repetida= false;
-            for (int o = 0; o <= canciones.Length; o++)
+            int i = 0;
+            while (repetida=false && i<canciones.Count)
             {
-                if (canciones[o] == cancion)
+                if (canciones[i] == cancion)
                 {
                     repetida= true;
+                }
+                else
+                {
+                    i++;
                 }
                
             }
@@ -30,13 +36,59 @@ namespace Lab2rcorrea4
             }
             else
             {
-                canciones[i + 1] = cancion;
+                canciones.Add(cancion);
                 return true;
+            }
+        }
+        public void verCanciones()
+        {
+            int i = 0;
+            while (i<canciones.Count)
+            {
+                Console.WriteLine("cancion" + i + ":");
+                Console.WriteLine(canciones[i].Infor()  ); 
+                i++;
 
             }
+        }
+        public List<Cancion> CancionesPorCriterio(string criterio,string valor)
+        {
+            List<Cancion> cpc = new List<Cancion>();
+            int i = 0;
+            while (i < canciones.Count)
+            {
+                if (criterio == "nombre")
+                {
+                    if (canciones[i].Nombre == valor)
+                    {
+                        cpc.Add(canciones[i]);
+                    }
+                }
+                else if (criterio == "album")
+                {
+                    if (canciones[i].Album == valor)
+                    {
+                        cpc.Add(canciones[i]);
+                    }
+                }
+                else if (criterio == "artista")
+                {
+                    if (canciones[i].Artista == valor)
+                    {
+                        cpc.Add(canciones[i]);
+                    }
+                }
+                else if (criterio == "genero")
+                {
+                    if (canciones[i].Genero == valor)
+                    {
+                        cpc.Add(canciones[i]);
+                    }
+                }
+                i++;
 
-
-
+            }
+            return cpc;
         }
     }
 }
