@@ -7,11 +7,14 @@ namespace Lab2rcorrea4
     class Espotifai
     {
         public List<Cancion> canciones;
+        public List<Playlist> playlists;
 
         
         public Espotifai()
         {
             canciones = new List<Cancion>();
+            playlists = new List<Playlist>();
+            
         }
         public bool AgregarCancion(Cancion cancion)
         {
@@ -89,6 +92,56 @@ namespace Lab2rcorrea4
 
             }
             return cpc;
+        }
+        public Playlist generarPlaylist(string criterio, string valorCriterio, string nombrePlaylist)
+        {
+            List<Cancion> cpc = new List<Cancion>();
+            int i = 0;
+            while (i < canciones.Count)
+            {
+                if (criterio == "nombre")
+                {
+                    if (canciones[i].Nombre == valorCriterio)
+                    {
+                        cpc.Add(canciones[i]);
+                    }
+                }
+                else if (criterio == "album")
+                {
+                    if (canciones[i].Album == valorCriterio)
+                    {
+                        cpc.Add(canciones[i]);
+                    }
+                }
+                else if (criterio == "artista")
+                {
+                    if (canciones[i].Artista == valorCriterio)
+                    {
+                        cpc.Add(canciones[i]);
+                    }
+                }
+                else if (criterio == "genero")
+                {
+                    if (canciones[i].Genero == valorCriterio)
+                    {
+                        cpc.Add(canciones[i]);
+                    }
+                }
+                i++;
+
+            }
+            Playlist playlist1 = new Playlist("nombre",cpc);
+            return playlist1;
+        }
+        public void verMisPlaylists()
+        {
+            int i = 0;
+            while (i < playlists.Count)
+            {
+                Console.WriteLine(playlists[i]);
+                
+                i++;
+            }
         }
     }
 }
