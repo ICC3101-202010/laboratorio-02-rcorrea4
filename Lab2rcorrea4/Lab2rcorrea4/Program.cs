@@ -22,14 +22,16 @@ namespace Lab2rcorrea4
 
             
             string opt = null;
-            while (opt != "4")
+            while (opt != "6")
             {
                 Console.WriteLine("Bienvenido a Espotifai");
                 Console.WriteLine("Ingrese opción: " +
                     "1-Ver todas las canciones " +
                     "2-Agregar cancion " +
                     "3-Ver canciones por criterio " +
-                    "4-Salir del programa ");
+                    "4-Generar Playlist" +
+                    "5-Ver Playlists" +
+                    "6-Salir del programa ");
 
 
                 opt = Console.ReadLine();
@@ -60,9 +62,9 @@ namespace Lab2rcorrea4
                         string valor = Console.ReadLine();
                         espotifai.CancionesPorCriterio(criterio, valor);
                         int i = 0;
-                        while (i< espotifai.CancionesPorCriterio(criterio, valor).Count)
+                        while (i < espotifai.CancionesPorCriterio(criterio, valor).Count)
                         {
-                            Console.WriteLine("cancion"+(i+1));
+                            Console.WriteLine("cancion" + (i + 1));
                             Console.WriteLine(espotifai.CancionesPorCriterio(criterio, valor)[i].Album);
                             Console.WriteLine(espotifai.CancionesPorCriterio(criterio, valor)[i].Artista);
                             Console.WriteLine(espotifai.CancionesPorCriterio(criterio, valor)[i].Genero);
@@ -71,6 +73,27 @@ namespace Lab2rcorrea4
                         }
                         break;
                     case "4":
+                        Console.WriteLine("Ingresar criterio");
+                        string c = Console.ReadLine();
+                        Console.WriteLine("Ingresar Valor");
+                        string v = Console.ReadLine();
+                        Console.WriteLine("Ingrese nombre lista");
+                        string no = Console.ReadLine();
+                        espotifai.generarPlaylist(c, v, no);
+                        int s = 0;
+                        while (s < espotifai.generarPlaylist(c, v, no).CancionesPlaylist.Count)
+                        {
+                            Console.WriteLine("cancion" + (s + 1));
+                            Console.WriteLine(espotifai.generarPlaylist(c, v, no).CancionesPlaylist[s].Album);
+                            Console.WriteLine(espotifai.generarPlaylist(c, v, no).CancionesPlaylist[s].Artista);
+                            Console.WriteLine(espotifai.generarPlaylist(c, v, no).CancionesPlaylist[s].Genero);
+                            Console.WriteLine(espotifai.generarPlaylist(c, v, no).CancionesPlaylist[s].Nombre);
+                        }
+                        break;
+                    case "5":
+                        espotifai.verMisPlaylists();
+                        break;
+                    case "6":
                         Console.WriteLine("Salir del programa");
                         break;
                     default:

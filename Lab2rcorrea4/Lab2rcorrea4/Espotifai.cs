@@ -135,13 +135,33 @@ namespace Lab2rcorrea4
         }
         public void verMisPlaylists()
         {
-            int i = 0;
-            while (i < playlists.Count)
+            if (playlists.Count == 0)
             {
-                Console.WriteLine(playlists[i]);
-                
-                i++;
+                Console.WriteLine("No Hay PLaylists");
             }
+            else
+            {
+                int i = 0;
+                while (i < playlists.Count)
+                {
+                    int p = 0;
+                    while (p < playlists[i].CancionesPlaylist.Count)
+                    {
+                        Console.WriteLine(playlists[i].NombrePlaylist);
+                        Console.WriteLine(playlists[i].CancionesPlaylist[p].Nombre);
+                        Console.WriteLine(playlists[i].CancionesPlaylist[p].Album);
+                        Console.WriteLine(playlists[i].CancionesPlaylist[p].Artista);
+                        Console.WriteLine(playlists[i].CancionesPlaylist[p].Genero);
+                        p++;
+                    }
+
+
+
+                    i++;
+                }
+
+            }
+            
         }
     }
 }
